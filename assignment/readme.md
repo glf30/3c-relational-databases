@@ -63,6 +63,6 @@ You will practice creating models, controllers, and routers that handle relation
 
 ---
 
-## Bonus
+## Hint
 
-- Ensure `rating` validation enforces a number between 1 and 5.
+- For getting a specific movie by its ID, you should utilize the model's .find() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. 
