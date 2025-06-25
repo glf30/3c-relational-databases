@@ -1,4 +1,4 @@
-# Movie Reviews Backend Assignment
+# Movie Reviews DB
 
 ## Overview
 
