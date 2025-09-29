@@ -62,8 +62,54 @@ async function getOneAlbumPage(req, res) {
   }
 }
 
+async function getUsersPage(req, res) {
+  try {
+    let listOfUsers = await User.find({});
+
+    res.render("users", { users: listOfUsers });
+  } catch (error) {
+    let errorObj = {
+      message: "failure to get User Page",
+      payload: error,
+    };
+
+    // server-side error
+    console.log(errorObj);
+
+    // client-side error
+    res.json(errorObj);
+  }
+}
+
+async function getOneUserPage(req, res) {
+  try {
+    let currentUser = await User.findById(req.params.id);
+    const albumsDocumentsArray = await Album.find({
+      _id: { $in: currentUser.favoriteAlbums },
+    });
+
+    res.render("oneUser", {
+      user: currentUser,
+      albumList: albumsDocumentsArray,
+    });
+  } catch (error) {
+    let errorObj = {
+      message: "failure to get User Favorite Page",
+      payload: error,
+    };
+
+    // server-side error
+    console.log(errorObj);
+
+    // client-side error
+    res.json(errorObj);
+  }
+}
+
 module.exports = {
   getHomePage,
   getAlbumPage,
   getOneAlbumPage,
+  getUsersPage,
+  getOneUserPage
 };
