@@ -47,7 +47,7 @@ You will practice creating models, controllers, and routers that handle relation
 
 - Create a router for movies with routes:
   - `POST /api/movies` — to create a movie.
-  - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie. When returning this data, in order to add the reviews to the movie object directly, you may need .toObject() for the movie.  This way, if you want to add a .reviews property to the movie object, you can!
+  - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie. 
 
 - Create a router for reviews with route:
   - `POST /api/reviews` — to create a review linked to a movie.
@@ -65,4 +65,4 @@ You will practice creating models, controllers, and routers that handle relation
 
 ## Hint
 
-- For getting a specific movie by its ID, you should utilize the model's .find() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. 
+- For getting a specific movie by its ID, you should utilize the model's .find() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data
