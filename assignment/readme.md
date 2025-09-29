@@ -47,7 +47,7 @@ You will practice creating models, controllers, and routers that handle relation
 
 - Create a router for movies with routes:
   - `POST /api/movies` — to create a movie.
-  - `GET /api/movies/:movieId` — to get a movie with all reviews populated.
+  - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie.
 
 - Create a router for reviews with route:
   - `POST /api/reviews` — to create a review linked to a movie.
