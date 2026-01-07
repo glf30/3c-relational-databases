@@ -65,4 +65,4 @@ You will practice creating models, controllers, and routers that handle relation
 
 ## Hint
 
-- For getting a specific movie by its ID, you should utilize the model's .find() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data
+- For getting a specific movie by its ID, you should utilize the model's .findOne() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data
