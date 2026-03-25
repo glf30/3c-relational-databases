@@ -36,7 +36,8 @@ You will practice creating models, controllers, and routers that handle relation
 ---
 
 ### 3. Controllers
-
+- Write a controller function to retrieve all movies.
+- Write a controller function to retrieve all reviews.
 - Write a controller function to create a new movie.
 - Write a controller function to create a new review linked to a movie by its ID.
 - Write a controller function to retrieve a movie by its ID, populated with all its reviews.
