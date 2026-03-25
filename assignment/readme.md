@@ -33,18 +33,9 @@ You will practice creating models, controllers, and routers that handle relation
 
 - Export the Review model.
 
----
+### 4. Controllers and Routers
 
-### 3. Controllers
-- Write a controller function to retrieve all movies.
-- Write a controller function to retrieve all reviews.
-- Write a controller function to create a new movie.
-- Write a controller function to create a new review linked to a movie by its ID.
-- Write a controller function to retrieve a movie by its ID, populated with all its reviews.
-
----
-
-### 4. Routers
+Achieve the following routes by creating router files to deal with the routing and controller files to deal with the logic
 
 - Create a router for movies with routes:
   - `POST /api/movies` — to create a movie.
@@ -54,15 +45,6 @@ You will practice creating models, controllers, and routers that handle relation
 - Create a router for reviews with route:
   - `GET /api/reviews` - get all reviews
   - `POST /api/reviews` — to create a review linked to a movie.
-
----
-
-### Testing
-
-- Use Postman to test the following:
-  - Add movies by posting movie details.
-  - Add reviews by posting review details along with the associated movie’s ID.
-  - Retrieve a movie by ID, verifying that the returned data includes the movie details plus an array of its reviews.
 
 ---
 
