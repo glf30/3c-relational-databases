@@ -47,8 +47,8 @@ You will practice creating models, controllers, and routers that handle relation
 
 - Create a router for movies with routes:
   - `POST /api/movies` — to create a movie.
-  - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie.
   - `GET /api/movies` - Return all movies and through using queries, allow the user to filter movies by genre
+  - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie. (Do this after setting up a POST route for your reviews) (see HINT for help)
 
 - Create a router for reviews with route:
   - `GET /api/reviews` - get all reviews
@@ -65,6 +65,6 @@ You will practice creating models, controllers, and routers that handle relation
 
 ---
 
-## Hint
+## HINT
 
-- For getting a specific movie by its ID, you should utilize the model's .findOne() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data
+- For getting a specific movie by its ID, you should utilize the model's .findOne() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data.
