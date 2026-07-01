@@ -50,4 +50,4 @@ Achieve the following routes by creating router files to deal with the routing a
 
 ## HINT
 
-- For getting a specific movie by its ID, you should utilize the model's .findOne() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data.
+- For getting a specific movie by its ID, you should utilize the model's .findById() function.  You will need to come up with a way to return both the movie object as well as the array of reviews in a single function. If you are having trouble, first start by getting all of the reviews associated with the movie without worrying about the Movie data.
