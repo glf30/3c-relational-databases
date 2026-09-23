@@ -43,8 +43,8 @@ Achieve the following routes by creating router files to deal with the routing a
   - `GET /api/movies/:movieId` — to get a movie with all reviews associated with that movie. (Do this after setting up a POST route for your reviews) (see HINT for help)
 
 - Create a router for reviews with route:
-  - `GET /api/reviews` - get all reviews
   - `POST /api/reviews` — to create a review linked to a movie.  A review should only be created if the movieID is valid.
+  - `GET /api/reviews` - get all reviews
 
 ---
 
